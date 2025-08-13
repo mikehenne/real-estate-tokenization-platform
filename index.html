@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binaryx - Real Estate Tokenization Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <div class="steps-info">
+                <span class="shop-icon">🛒</span>
+                <span>Three steps to buy properties</span>
+            </div>
+            <div class="steps-flow">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span>Sign up</span>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <span>Verificate</span>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span>Invest in property</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">📊</div>
+                <span class="logo-text">BINARYX</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item" data-page="home">🏠 Home</a>
+                <a href="#" class="nav-item" data-page="portfolio">📁 Portfolio</a>
+                <a href="#" class="nav-item" data-page="construction">🏗️ Construction</a>
+                <a href="#" class="nav-item" data-page="rental">🏠 Rental</a>
+                <a href="#" class="nav-item" data-page="p2p-market">💱 P2P Market</a>
+                <a href="#" class="nav-item" data-page="partners">👥 Partners</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="language-selector">
+                    <span class="globe-icon">🌐</span>
+                    <span>EN</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <button class="sign-in-btn">Sign in / Sign up</button>
+                <button class="menu-btn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content" id="main-content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Want to know more?</p>
+                <a href="https://guide.binaryx.com/" target="_blank">How to invest</a>
+            </div>
+            <div class="footer-section">
+                <p>Live Chat Support</p>
+                <span class="status online">Online</span>
+            </div>
+            <div class="footer-section">
+                <a href="https://www.binaryx.com/terms-of-use" target="_blank">Terms</a>
+            </div>
+            <div class="footer-section">
+                <p>Choose language</p>
+                <div class="language-options">
+                    <span>EN</span>
+                    <span>English</span>
+                    <span>Українська</span>
+                    <span>Русский</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Page Templates (Hidden) -->
+    <div id="page-templates" style="display: none;">
+        
+        <!-- Home Page Template -->
+        <div id="home-template">
+            <!-- Country Filters -->
+            <div class="filters">
+                <button class="filter-btn active">🌍 All</button>
+                <button class="filter-btn">🇹🇷 Turkey</button>
+                <button class="filter-btn">🇮🇩 Indonesia</button>
+                <button class="filter-btn">🇲🇪 Montenegro</button>
+            </div>
+
+            <!-- Rental Properties Section -->
+            <section class="properties-section">
+                <div class="section-header">
+                    <h2>Rental Properties</h2>
+                    <a href="#" class="view-all">All ></a>
+                </div>
+                
+                <div class="properties-grid" id="rental-properties">
+                    <!-- Properties will be loaded dynamically -->
+                </div>
+            </section>
+
+            <!-- Construction Properties Section -->
+            <section class="properties-section">
+                <div class="section-header">
+                    <h2>Construction Properties</h2>
+                    <a href="#" class="view-all">All ></a>
+                </div>
+                
+                <div class="properties-grid" id="construction-properties">
+                    <!-- Properties will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Portfolio Page Template -->
+        <div id="portfolio-template">
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-tab="rental">Rental</button>
+                <button class="tab-btn" data-tab="construction">Construction</button>
+            </div>
+            
+            <div class="wallet-connect">
+                <div class="wallet-icon">💼</div>
+                <h2>Please Connect your wallet</h2>
+                <p>To use Binaryx Marketplace you need to connect your wallet first.</p>
+                <button class="connect-wallet-btn">Sign up / Log in</button>
+            </div>
+        </div>
+
+        <!-- Construction Page Template -->
+        <div id="construction-template">
+            <div class="page-header">
+                <h1>Construction investments</h1>
+            </div>
+            <div class="properties-grid" id="construction-investments">
+                <!-- Construction properties will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Rental Page Template -->
+        <div id="rental-template">
+            <div class="page-header">
+                <h1>Rental Properties</h1>
+            </div>
+            <div class="properties-grid" id="rental-investments">
+                <!-- Rental properties will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- P2P Market Page Template -->
+        <div id="p2p-market-template">
+            <div class="breadcrumb">
+                <span>Home</span> › <span>Secondary Market</span>
+            </div>
+            
+            <div class="page-header">
+                <h1>Secondary Market</h1>
+                <p>Trade tokens with other market participants.</p>
+            </div>
+
+            <div class="market-stats">
+                <div class="stat-card">
+                    <h3>Monthly trading volume</h3>
+                    <div class="stat-value">$41,940</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Average token sell time</h3>
+                    <div class="stat-value">23min</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Market participants</h3>
+                    <div class="stat-value">110</div>
+                </div>
+            </div>
+
+            <div class="properties-grid" id="p2p-properties">
+                <!-- P2P properties will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Partners Page Template -->
+        <div id="partners-template">
+            <div class="breadcrumb">
+                <span>Home</span> › <span>Partners</span>
+            </div>
+            
+            <div class="page-header">
+                <h1>Partners</h1>
+            </div>
+
+            <div class="partners-grid" id="partners-list">
+                <!-- Partners will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Property Detail Page Template -->
+        <div id="property-detail-template">
+            <div class="property-detail-container">
+                <!-- Property Hero Section -->
+                <div class="property-hero">
+                    <div class="property-main-image">
+                        <img id="property-hero-image" src="" alt="" />
+                        <div class="property-status-overlay">
+                            <div class="status-badge" id="property-status-badge"></div>
+                        </div>
+                    </div>
+                    <div class="property-thumbnail-gallery">
+                        <div id="property-thumbnails">
+                            <!-- Thumbnail images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Info Section -->
+                <div class="property-info-section">
+                    <div class="property-header">
+                        <div class="property-title-section">
+                            <h1 id="property-detail-title"></h1>
+                            <div class="property-badges">
+                                <span class="sale-badge" id="property-sale-badge"></span>
+                                <span class="location-badge" id="property-location-badge"></span>
+                                <span class="investors-badge" id="property-investors-badge"></span>
+                            </div>
+                        </div>
+                        <div class="property-price-section">
+                            <div class="property-price">
+                                <span class="price-label">Property Price</span>
+                                <span class="price-value" id="property-price-value"></span>
+                            </div>
+                            <div class="property-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">ECA</span>
+                                    <span class="metric-value" id="property-eca">TBD</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">APR</span>
+                                    <span class="metric-value" id="property-apr"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Token Purchase Section -->
+                    <div class="token-purchase-section">
+                        <div class="token-info">
+                            <div class="token-price">
+                                <span class="token-price-label">Token Price:</span>
+                                <span class="token-price-value" id="token-price-value"></span>
+                            </div>
+                            <div class="collection-progress">
+                                <span class="collected-label">Collected:</span>
+                                <span class="collected-value" id="collected-percentage"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-bar-section">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="property-progress-fill"></div>
+                            </div>
+                            <div class="unit-indicators" id="unit-indicators">
+                                <!-- Unit indicators will be loaded here -->
+                            </div>
+                        </div>
+
+                        <div class="purchase-form">
+                            <div class="buy-amount-section">
+                                <label for="buy-amount">Buy amount</label>
+                                <div class="amount-input-container">
+                                    <input type="number" id="buy-amount" value="0" min="0" />
+                                    <button class="max-btn">Max</button>
+                                </div>
+                                <div class="balance-info">
+                                    <span>Your balance: <span id="user-balance">0 USDT</span></span>
+                                </div>
+                            </div>
+
+                            <div class="token-amount-options">
+                                <button class="token-option" data-amount="10">10 Tokens<br><span class="token-price-small">$500</span></button>
+                                <button class="token-option" data-amount="25">25 Tokens<br><span class="token-price-small">$1,250</span></button>
+                                <button class="token-option" data-amount="50">50 Tokens<br><span class="token-price-small">$2,500</span></button>
+                            </div>
+
+                            <button class="buy-tokens-btn" id="buy-tokens-btn">Buy Tokens</button>
+                        </div>
+                    </div>
+
+                    <!-- Property Details Tabs -->
+                    <div class="property-tabs">
+                        <div class="tab-navigation">
+                            <button class="tab-btn active" data-tab="details">Details</button>
+                            <button class="tab-btn" data-tab="performance">Performance</button>
+                            <button class="tab-btn" data-tab="documents">Documents</button>
+                            <button class="tab-btn" data-tab="financials">Financials</button>
+                            <button class="tab-btn" data-tab="activity">Activity</button>
+                            <button class="tab-btn" data-tab="governance">Governance</button>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-panel active" id="details-panel">
+                                <div class="property-description">
+                                    <h3>Unit funds collecting progress</h3>
+                                    <p id="property-description-text"></p>
+                                </div>
+                                
+                                <div class="units-grid" id="units-grid">
+                                    <!-- Unit cards will be loaded here -->
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" id="performance-panel">
+                                <div class="performance-content">
+                                    <h3>Property Performance</h3>
+                                    <div class="performance-metrics">
+                                        <div class="performance-metric">
+                                            <span class="metric-label">Total Return</span>
+                                            <span class="metric-value">--</span>
+                                        </div>
+                                        <div class="performance-metric">
+                                            <span class="metric-label">Monthly Yield</span>
+                                            <span class="metric-value">--</span>
+                                        </div>
+                                        <div class="performance-metric">
+                                            <span class="metric-label">Occupancy Rate</span>
+                                            <span class="metric-value">--</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" id="documents-panel">
+                                <div class="documents-content">
+                                    <h3>Property Documents</h3>
+                                    <div class="documents-list">
+                                        <div class="document-item">
+                                            <span class="document-name">Property Deed</span>
+                                            <button class="download-btn">Download</button>
+                                        </div>
+                                        <div class="document-item">
+                                            <span class="document-name">Financial Report</span>
+                                            <button class="download-btn">Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" id="financials-panel">
+                                <div class="financials-content">
+                                    <h3>Financial Information</h3>
+                                    <p>Detailed financial information will be available here.</p>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" id="activity-panel">
+                                <div class="activity-content">
+                                    <h3>Recent Activity</h3>
+                                    <p>Transaction history and property activity will be displayed here.</p>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel" id="governance-panel">
+                                <div class="governance-content">
+                                    <h3>Governance</h3>
+                                    <p>Governance information and voting will be available here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
